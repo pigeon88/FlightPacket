@@ -1,0 +1,398 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/default_bg"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/llt_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/white"
+        android:padding="@dimen/comm_8dp">
+
+        <TextView
+            android:id="@+id/tv_save"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/bg_button_blue_with_radius2"
+            android:gravity="center"
+            android:padding="@dimen/comm_13dp"
+            android:text="保存"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/comm_16dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/llt_bottom"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="@dimen/comm_10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_title"
+                    style="@style/pilot_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/comm_15dp"
+                    android:paddingLeft="@dimen/comm_10dp"
+                    android:paddingRight="@dimen/comm_10dp"
+                    android:paddingTop="@dimen/comm_15dp"
+                    android:text="基础资料" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        style="@style/pilot_des_title"
+                        android:layout_width="@dimen/comm_100dp"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/comm_13dp"
+                        android:text="日期 :" />
+
+                    <TextView
+                        android:id="@+id/pilot_bean_input_time"
+                        style="@style/item_grey_des"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/comm_10dp"
+                        android:text="选择日期" />
+                </LinearLayout>
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.2dp"
+                    android:background="#dcdcdc" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tv_title2"
+                        style="@style/pilot_des_title"
+                        android:layout_width="@dimen/comm_100dp"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"
+                        android:padding="@dimen/comm_13dp"
+                        android:text="名称 :" />
+
+                    <EditText
+                        android:id="@+id/pilot_bean_input_name"
+                        style="@style/pilot_input"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/tv_title2"
+                        android:hint="输入领航名称"
+                        android:imeOptions="actionNext" />
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.2dp"
+                    android:background="#dcdcdc" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/title_3"
+                        style="@style/pilot_des_title"
+                        android:layout_width="@dimen/comm_100dp"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/comm_13dp"
+                        android:text="机型/号 :" />
+
+                    <EditText
+                        android:id="@+id/pilot_bean_input_model"
+                        style="@style/pilot_input"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/title_3"
+                        android:hint="输入机型/号"
+                        android:imeOptions="actionNext" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.2dp"
+                    android:background="#dcdcdc" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/title4"
+                        style="@style/pilot_des_title"
+                        android:layout_width="@dimen/comm_100dp"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/comm_13dp"
+                        android:text="飞行员 :" />
+
+
+                    <EditText
+                        android:id="@+id/pilot_bean_input_flyer_num"
+                        style="@style/pilot_input"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/title4"
+                        android:hint="飞行员代号"
+                        android:imeOptions="actionNext" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.2dp"
+                    android:background="#dcdcdc" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tv_title5"
+                        style="@style/pilot_des_title"
+                        android:layout_width="@dimen/comm_100dp"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/comm_13dp"
+                        android:text="领航员 :" />
+
+                    <EditText
+                        android:id="@+id/pilot_bean_input_piloter_num"
+                        style="@style/pilot_input"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/tv_title5"
+                        android:hint="领航员代号"
+                        android:imeOptions="actionNext" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.2dp"
+                    android:background="#dcdcdc" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tv_title7"
+                        style="@style/pilot_des_title"
+                        android:layout_width="@dimen/comm_100dp"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/comm_13dp"
+                        android:text="出航图 :" />
+
+
+                    <TextView
+                        android:id="@+id/tv_choose_out_pic"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@id/tv_title7"
+                        android:layout_toRightOf="@+id/tv_title7"
+                        android:background="@drawable/button_white_bg_blue_border"
+                        android:paddingBottom="@dimen/comm_5dp"
+                        android:paddingLeft="@dimen/comm_20dp"
+                        android:paddingRight="@dimen/comm_20dp"
+                        android:paddingTop="@dimen/comm_5dp"
+                        android:text="选择"
+                        android:textColor="@color/blue_comm" />
+
+                    <ImageView
+                        android:id="@+id/tv_out"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_below="@id/tv_title7"
+                        android:layout_marginLeft="@dimen/comm_10dp"
+                        android:background="#cccccc"
+                        android:scaleType="centerCrop" />
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.2dp"
+                    android:layout_marginTop="@dimen/comm_10dp"
+                    android:background="#dcdcdc" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tv_title6"
+                        style="@style/pilot_des_title"
+                        android:layout_width="@dimen/comm_100dp"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/comm_13dp"
+                        android:text="归航图 :" />
+
+
+                    <TextView
+                        android:id="@+id/tv_choose_back_pic"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@id/tv_title6"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/tv_title6"
+                        android:background="@drawable/button_white_bg_blue_border"
+                        android:paddingBottom="@dimen/comm_5dp"
+                        android:paddingLeft="@dimen/comm_20dp"
+                        android:paddingRight="@dimen/comm_20dp"
+                        android:paddingTop="@dimen/comm_5dp"
+                        android:text="选择"
+                        android:textColor="@color/blue_comm" />
+
+                    <ImageView
+                        android:id="@+id/tv_back"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_below="@id/tv_title6"
+                        android:layout_marginLeft="@dimen/comm_10dp"
+                        android:background="#cccccc"
+                        android:scaleType="centerCrop" />
+                </RelativeLayout>
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.2dp"
+                    android:layout_marginTop="@dimen/comm_10dp"
+                    android:background="#dcdcdc" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/pilot_des_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/comm_13dp"
+                        android:text="通讯导航资料 :" />
+
+                    <EditText
+                        android:id="@+id/tv_navi_content"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:hint="多行输入"
+                        android:imeOptions="actionDone"
+                        android:maxLines="3"
+                        android:padding="@dimen/comm_13dp"
+                        android:textColor="#333333"
+                        android:textColorHint="#979797"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.2dp"
+                    android:background="#dcdcdc" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/pilot_des_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/comm_13dp"
+                        android:text="左表信息 :" />
+
+                    <LinearLayout
+                        android:id="@+id/llt_left_add"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/comm_10dp"
+                        android:orientation="vertical" />
+
+                    <TextView
+                        android:id="@+id/tv_add_address_left"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/comm_10dp"
+                        android:background="@drawable/button_white_bg_blue_border"
+                        android:paddingBottom="@dimen/comm_5dp"
+                        android:paddingLeft="@dimen/comm_20dp"
+                        android:paddingRight="@dimen/comm_20dp"
+                        android:paddingTop="@dimen/comm_5dp"
+                        android:text="添加地点"
+                        android:textColor="@color/blue_comm" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.2dp"
+                    android:background="#dcdcdc" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/pilot_des_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/comm_13dp"
+                        android:text="右表信息 :" />
+
+                    <LinearLayout
+                        android:id="@+id/llt_right_add"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/comm_10dp"
+                        android:orientation="vertical" />
+
+                    <TextView
+                        android:id="@+id/tv_add_address_right"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/comm_10dp"
+                        android:background="@drawable/button_white_bg_blue_border"
+                        android:paddingBottom="@dimen/comm_5dp"
+                        android:paddingLeft="@dimen/comm_20dp"
+                        android:paddingRight="@dimen/comm_20dp"
+                        android:paddingTop="@dimen/comm_5dp"
+                        android:text="添加地点"
+                        android:textColor="@color/blue_comm" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

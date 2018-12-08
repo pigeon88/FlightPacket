@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#FFFFFF</color>
+    <color name="colorAccent">#FF4081</color>
+
+
+    <color name="default_bg">#f1f5f8</color>
+    <!-- 透明 -->
+    <color name="color_transparent">#00000000</color>
+
+    <!-- 透明 -->
+    <color name="color_transparent_white">#25FFFFFF</color>
+
+    <color name="colorPrimaryDarkDeep">#3770ad</color>
+    <color name="blue_comm">#01c6f0</color>
+    <color name="blue_comm_deep">#02aed2</color>
+    <color name="grgray">#686868</color>
+    //天气温度
+    <color name="weather_temp">#333333</color>
+
+    <color name="click_down">#FFE5E9EC</color>
+
+
+    <color name="dialog_line">#cccccc</color>
+
+    <color name="report_cell_name">#29BBE2</color>
+    <color name="divider_horizontal_gray">#7E7E7E</color>
+
+</resources>

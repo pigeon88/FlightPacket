@@ -1,0 +1,504 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/default_bg"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/llt_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/white"
+        android:padding="@dimen/comm_8dp">
+
+        <TextView
+            android:id="@+id/tv_save"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/bg_button_blue_with_radius2"
+            android:gravity="center"
+            android:padding="@dimen/comm_13dp"
+            android:text="保存"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/comm_16dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/llt_bottom">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="@dimen/comm_10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_title"
+                    style="@style/pilot_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/comm_15dp"
+                    android:paddingLeft="@dimen/comm_10dp"
+                    android:paddingRight="@dimen/comm_10dp"
+                    android:paddingTop="@dimen/comm_15dp"
+                    android:text="孔滩镇" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        style="@style/pilot_input"
+                        android:layout_width="@dimen/comm_100dp"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/comm_13dp"
+                        android:text="预期时刻 :" />
+
+                    <TextView
+                        android:id="@+id/tv_yuqi"
+                        style="@style/pilot_input"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="点击选择预期时间" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.2dp"
+                    android:background="#dcdcdc" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/pilot_des_title"
+                        android:layout_width="@dimen/comm_100dp"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/comm_13dp"
+                        android:text="实际时刻 :" />
+
+
+                    <TextView
+                        android:id="@+id/tv_time"
+                        style="@style/pilot_input"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:imeOptions="actionNext"
+                        android:text="点击选择实际时刻" />
+
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.2dp"
+                    android:background="#dcdcdc" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tv_title8"
+                        style="@style/pilot_des_title"
+                        android:layout_width="@dimen/comm_100dp"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"
+                        android:padding="@dimen/comm_13dp"
+                        android:text="地点代号 :" />
+
+                    <EditText
+                        android:id="@+id/tv_didian_daihao"
+                        style="@style/pilot_input"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/tv_title8"
+                        android:hint="输入地点代号"
+                        android:imeOptions="actionNext"
+                        android:inputType="number" />
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.2dp"
+                    android:background="#dcdcdc" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tv_title9"
+                        style="@style/pilot_des_title"
+                        android:layout_width="@dimen/comm_100dp"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"
+                        android:padding="@dimen/comm_13dp"
+                        android:text="经度 :" />
+
+                    <EditText
+                        android:id="@+id/tv_jingdu"
+                        style="@style/pilot_input"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/tv_title9"
+                        android:hint="输入经度"
+                        android:imeOptions="actionNext"
+                        android:inputType="number" />
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.2dp"
+                    android:background="#dcdcdc" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tv_title10"
+                        style="@style/pilot_des_title"
+                        android:layout_width="@dimen/comm_100dp"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"
+                        android:padding="@dimen/comm_13dp"
+                        android:text="纬度 :" />
+
+                    <EditText
+                        android:id="@+id/tv_weidu"
+                        style="@style/pilot_input"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/tv_title10"
+                        android:hint="输入纬度"
+                        android:imeOptions="actionNext"
+                        android:inputType="number" />
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.2dp"
+                    android:background="#dcdcdc" />
+
+                <RelativeLayout
+                    android:id="@+id/rlt_juli"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tv_title11"
+                        style="@style/pilot_des_title"
+                        android:layout_width="@dimen/comm_100dp"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"
+                        android:padding="@dimen/comm_13dp"
+                        android:text="距离 :" />
+
+                    <EditText
+                        android:id="@+id/tv_juli"
+                        style="@style/pilot_input"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/tv_title11"
+                        android:hint="输入距离"
+                        android:imeOptions="actionNext"
+                        android:inputType="number" />
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.2dp"
+                    android:background="#dcdcdc" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tv_title2"
+                        style="@style/pilot_des_title"
+                        android:layout_width="@dimen/comm_100dp"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"
+                        android:padding="@dimen/comm_13dp"
+                        android:text="磁航向 :" />
+
+                    <TextView
+                        android:id="@+id/end2"
+                        style="@style/prepare_grey"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:padding="@dimen/comm_10dp"
+                        android:text="度" />
+
+                    <EditText
+                        android:id="@+id/tv_cihangxiang"
+                        style="@style/pilot_input"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toLeftOf="@id/end2"
+                        android:layout_toRightOf="@id/tv_title2"
+                        android:hint="输入磁航向"
+                        android:imeOptions="actionNext"
+                        android:inputType="number" />
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.2dp"
+                    android:background="#dcdcdc" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/title_3"
+                        style="@style/pilot_des_title"
+                        android:layout_width="@dimen/comm_100dp"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/comm_13dp"
+                        android:text="偏流 :" />
+
+                    <TextView
+                        android:id="@+id/end3"
+                        style="@style/prepare_grey"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:padding="@dimen/comm_10dp"
+                        android:text="度" />
+
+                    <EditText
+                        android:id="@+id/tv_pianliu"
+                        style="@style/pilot_input"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toLeftOf="@+id/end3"
+                        android:layout_toRightOf="@+id/title_3"
+                        android:hint="输入偏流角度"
+                        android:imeOptions="actionNext"
+                        android:inputType="number" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.2dp"
+                    android:background="#dcdcdc" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/title4"
+                        style="@style/pilot_des_title"
+                        android:layout_width="@dimen/comm_100dp"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/comm_13dp"
+                        android:text="磁航轨迹 :" />
+
+                    <TextView
+                        android:id="@+id/end4"
+                        style="@style/prepare_grey"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:padding="@dimen/comm_10dp"
+                        android:text="度" />
+
+                    <EditText
+                        android:id="@+id/tv_cihangguiji"
+                        style="@style/pilot_input"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toLeftOf="@+id/end4"
+                        android:layout_toRightOf="@+id/title4"
+                        android:hint="输入磁航迹角度"
+                        android:imeOptions="actionNext"
+                        android:inputType="number" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.2dp"
+                    android:background="#dcdcdc" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tv_title5"
+                        style="@style/pilot_des_title"
+                        android:layout_width="@dimen/comm_100dp"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/comm_13dp"
+                        android:text="地速 :" />
+
+                    <TextView
+                        android:id="@+id/end5"
+                        style="@style/prepare_grey"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:padding="@dimen/comm_10dp"
+                        android:text="KM/H" />
+
+                    <EditText
+                        android:id="@+id/tv_disu"
+                        style="@style/pilot_input"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toLeftOf="@+id/end5"
+                        android:layout_toRightOf="@+id/tv_title5"
+                        android:hint="输入地速"
+                        android:imeOptions="actionNext"
+                        android:inputType="number" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.2dp"
+                    android:background="#dcdcdc" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tv_title6"
+                        style="@style/pilot_des_title"
+                        android:layout_width="@dimen/comm_100dp"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/comm_13dp"
+                        android:text="空速 :" />
+
+                    <TextView
+                        android:id="@+id/end6"
+                        style="@style/prepare_grey"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:padding="@dimen/comm_10dp"
+                        android:text="KM/H" />
+
+                    <EditText
+                        android:id="@+id/tv_kongsu"
+                        style="@style/pilot_input"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toLeftOf="@+id/end6"
+                        android:layout_toRightOf="@+id/tv_title6"
+                        android:hint="输入空速"
+                        android:imeOptions="actionNext"
+                        android:inputType="number" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.2dp"
+                    android:background="#dcdcdc" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tv_title7"
+                        style="@style/pilot_des_title"
+                        android:layout_width="@dimen/comm_100dp"
+                        android:layout_height="wrap_content"
+                        android:imeOptions="actionNext"
+                        android:padding="@dimen/comm_13dp"
+                        android:text="高度 :" />
+
+                    <TextView
+                        android:id="@+id/end7"
+                        style="@style/prepare_grey"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:padding="@dimen/comm_10dp"
+                        android:text="KM" />
+
+                    <EditText
+                        android:id="@+id/tv_gaodu"
+                        style="@style/pilot_input"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toLeftOf="@+id/end7"
+                        android:layout_toRightOf="@+id/tv_title7"
+                        android:hint="输入高度"
+                        android:inputType="number" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.2dp"
+                    android:background="#dcdcdc" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/pilot_des_title"
+                        android:layout_width="@dimen/comm_100dp"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/comm_13dp"
+                        android:text="附记 :" />
+
+                    <EditText
+                        android:id="@+id/tv_fuji"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:hint="输入内容"
+                        android:imeOptions="actionDone"
+                        android:maxLines="3"
+                        android:padding="@dimen/comm_13dp"
+                        android:textColor="#333333"
+                        android:textColorHint="#979797"
+                        android:textSize="14sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+
+</RelativeLayout>

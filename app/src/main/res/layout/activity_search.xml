@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/default_bg"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.2dp"
+        android:background="#dcdcdc" />
+
+    <RelativeLayout
+        android:id="@+id/rlt_searchbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0.2dp">
+
+        <EditText
+            android:id="@+id/edt_search"
+            style="@style/pilot_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:hint="请输入关键字搜索  "
+            android:imeOptions="actionSearch"
+            android:padding="@dimen/comm_15dp" />
+
+        <ImageView
+            android:id="@+id/tv_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/comm_10dp"
+            android:padding="@dimen/comm_10dp"
+            android:src="@mipmap/ic_search" />
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/tv_search_logo"
+        style="@style/prepare_small_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:drawablePadding="@dimen/comm_20dp"
+        android:drawableTop="@mipmap/big_search"
+        android:text="搜索教学视频或文档" />
+
+    <LinearLayout
+        android:id="@+id/llt_search"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/rlt_searchbar"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/comm_10dp"
+            android:background="@android:color/white"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/prepare_small_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/comm_10dp"
+                android:text="找到3个相关视频" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.2dp"
+                android:background="#dcdcdc" />
+
+            <RelativeLayout
+                android:id="@+id/rlt_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/item_click_bg"
+                android:orientation="horizontal"
+                android:padding="@dimen/comm_15dp">
+
+                <ImageView
+                    android:id="@+id/cb_choose1"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_centerVertical="true"
+                    android:button="@null"
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/detail_1" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/comm_20dp"
+                    android:layout_toRightOf="@id/cb_choose1"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/black_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="起飞操作" />
+
+
+                    <TextView
+                        style="@style/item_grey_des"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/comm_15dp"
+                        android:text="演示起飞操作与起飞相关注意事项，这在飞行中是非常重要一步" />
+                </LinearLayout>
+
+
+                <ImageView
+                    android:id="@+id/tv_check1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/kejian_you" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.2dp"
+                android:background="#dcdcdc" />
+
+            <RelativeLayout
+                android:id="@+id/rlt_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/item_click_bg"
+                android:orientation="horizontal"
+                android:padding="@dimen/comm_15dp">
+
+                <ImageView
+                    android:id="@+id/cb_choose2"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_centerVertical="true"
+                    android:button="@null"
+                    android:drawableStart="@drawable/unupload_checked"
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/detail_2" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/comm_20dp"
+                    android:layout_toRightOf="@id/cb_choose2"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/black_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="起飞演示" />
+
+
+                    <TextView
+                        style="@style/item_grey_des"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/comm_15dp"
+                        android:text="中队飞行员起飞演示" />
+                </LinearLayout>
+
+
+                <ImageView
+                    android:id="@+id/tv_check2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/kejian_you" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/comm_10dp"
+            android:background="@android:color/white"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/prepare_small_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/comm_10dp"
+                android:text="找到3篇相关文档" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.2dp"
+                android:background="#dcdcdc" />
+
+            <RelativeLayout
+                android:id="@+id/rlt_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/item_click_bg"
+                android:orientation="horizontal"
+                android:padding="@dimen/comm_15dp">
+
+                <ImageView
+                    android:id="@+id/cb_choose3"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_centerVertical="true"
+                    android:button="@null"
+                    android:drawableStart="@drawable/unupload_checked"
+                    android:scaleType="fitCenter"
+                    android:src="@mipmap/document" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/comm_20dp"
+                    android:layout_toRightOf="@id/cb_choose3"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/item_grey_des"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/comm_15dp"
+                        android:lineSpacingExtra="@dimen/comm_5dp"
+                        android:text="低速机翼及其气动性基础，介绍关于气动性理论相关基本知识" />
+                </LinearLayout>
+
+
+                <ImageView
+                    android:id="@+id/tv_check3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/kejian_you" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.2dp"
+                android:background="#dcdcdc" />
+
+            <RelativeLayout
+                android:id="@+id/rlt_4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/item_click_bg"
+                android:orientation="horizontal"
+                android:padding="@dimen/comm_15dp">
+
+                <ImageView
+                    android:id="@+id/cb_choose4"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_centerVertical="true"
+                    android:button="@null"
+                    android:drawableStart="@drawable/unupload_checked"
+                    android:scaleType="fitCenter"
+                    android:src="@mipmap/document" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/comm_20dp"
+                    android:layout_toRightOf="@id/cb_choose4"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/item_grey_des"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/comm_15dp"
+                        android:text="介绍低空飞行的气流变化及气流变化对机翼的影响" />
+                </LinearLayout>
+
+
+                <ImageView
+                    android:id="@+id/tv_check4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/kejian_you" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

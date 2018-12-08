@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/default_bg"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/llt_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/white"
+        android:padding="@dimen/comm_8dp">
+
+        <TextView
+            android:id="@+id/tv_sure"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="bottom"
+            android:background="@drawable/bg_button_blue_with_radius2"
+            android:gravity="center"
+            android:padding="@dimen/comm_13dp"
+            android:text="确定"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/comm_18dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+
+    <ScrollView
+        android:id="@+id/sc_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/llt_bottom">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:background="@color/default_bg"
+            android:orientation="vertical"
+            android:padding="@dimen/comm_10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:orientation="vertical"
+                android:padding="@dimen/comm_10dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tv_title"
+                        style="@style/prepare_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="王一山（LH060301）" />
+
+                    <TextView
+                        android:id="@+id/tv_time"
+                        style="@style/prepare_grey"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:text="9月18日 2018" />
+                </RelativeLayout>
+
+
+                <TextView
+                    android:id="@+id/tv_subject"
+                    style="@style/prepare_small_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/comm_15dp"
+                    android:text="科目：低空飞行" />
+
+                <TextView
+                    android:id="@+id/tv_des"
+                    style="@style/prepare_small_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/comm_10dp"
+                    android:text="练习：动力控制系统" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/comm_10dp"
+                android:background="@android:color/white"
+                android:orientation="vertical">
+
+
+                <TextView
+                    style="@style/prepare_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/comm_10dp"
+                    android:text="带飞" />
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.2dp"
+                    android:background="#dcdcdc" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        style="@style/prepare_small_title"
+                        android:layout_width="@dimen/comm_100dp"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/comm_12dp"
+                        android:text="次数 :" />
+
+                    <EditText
+                        android:id="@+id/edt_daifei_num"
+                        style="@style/pilot_input"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="输入次数"
+                        android:imeOptions="actionNext"
+                        android:inputType="number" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.2dp"
+                    android:background="#dcdcdc" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        style="@style/prepare_small_title"
+                        android:layout_width="@dimen/comm_100dp"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/comm_12dp"
+                        android:text="时间 :" />
+
+                    <EditText
+                        android:id="@+id/edt_daifei_time"
+                        style="@style/pilot_input"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="输入时间（分钟或小时）"
+                        android:imeOptions="actionNext"
+                        android:inputType="number" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/comm_10dp"
+                android:background="@android:color/white"
+                android:orientation="vertical">
+
+
+                <TextView
+                    style="@style/prepare_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/comm_10dp"
+                    android:text="检查" />
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.2dp"
+                    android:background="#dcdcdc" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        style="@style/prepare_small_title"
+                        android:layout_width="@dimen/comm_100dp"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/comm_12dp"
+                        android:text="次数 :" />
+
+                    <EditText
+                        android:id="@+id/edt_check_num"
+                        style="@style/pilot_input"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="输入次数"
+                        android:imeOptions="actionNext"
+                        android:inputType="number" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.2dp"
+                    android:background="#dcdcdc" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        style="@style/prepare_small_title"
+                        android:layout_width="@dimen/comm_100dp"
+                        android:layout_height="wrap_content"
+
+                        android:padding="@dimen/comm_12dp"
+                        android:text="时间 :" />
+
+                    <EditText
+                        android:id="@+id/edt_check_time"
+                        style="@style/pilot_input"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="输入时间（分钟或小时）"
+                        android:imeOptions="actionNext"
+                        android:inputType="number" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/comm_10dp"
+                android:background="@android:color/white"
+                android:orientation="vertical">
+
+
+                <TextView
+                    style="@style/prepare_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/comm_10dp"
+                    android:text="单飞" />
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.2dp"
+                    android:background="#dcdcdc" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        style="@style/prepare_small_title"
+                        android:layout_width="@dimen/comm_100dp"
+                        android:layout_height="wrap_content"
+
+                        android:padding="@dimen/comm_12dp"
+                        android:text="次数 :" />
+
+                    <EditText
+                        android:id="@+id/edt_danfei_num"
+                        style="@style/pilot_input"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="输入次数"
+                        android:imeOptions="actionNext"
+                        android:inputType="number" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.2dp"
+                    android:background="#dcdcdc" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        style="@style/prepare_small_title"
+                        android:layout_width="@dimen/comm_100dp"
+                        android:layout_height="wrap_content"
+
+                        android:padding="@dimen/comm_12dp"
+                        android:text="时间 :" />
+
+                    <EditText
+                        android:id="@+id/edt_danfei_time"
+                        style="@style/pilot_input"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="输入时间（分钟或小时）"
+                        android:imeOptions="actionDone"
+                        android:inputType="number" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

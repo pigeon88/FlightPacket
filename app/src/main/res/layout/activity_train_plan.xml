@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/default_bg"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/default_bg"
+            android:orientation="vertical"
+            android:padding="@dimen/comm_10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:padding="@dimen/comm_13dp">
+
+                <TextView
+                    android:id="@+id/tv_project_title"
+                    style="@style/train_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="科目：" />
+
+                <TextView
+                    android:id="@+id/tv_project_title_des"
+                    style="@style/train_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/tv_project_title"
+                    android:text="低空飞行" />
+
+                <TextView
+                    android:id="@+id/tv_time"
+                    style="@style/train_small_grey"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="9月12日 2018" />
+
+                <TextView
+                    android:id="@+id/tv_train_title"
+                    style="@style/train_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_project_title"
+                    android:layout_marginTop="@dimen/comm_10dp"
+                    android:text="练习：" />
+
+                <TextView
+                    android:id="@+id/tv_train_title_des"
+                    style="@style/train_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/tv_train_title"
+                    android:layout_toRightOf="@+id/tv_train_title"
+                    android:text="动力系统控制" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/comm_10dp"
+                android:background="@android:color/white"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView2"
+                    style="@style/train_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/comm_10dp"
+                    android:text="学员" />
+
+                <com.hsy.flightpacket.views.NoScrollListView
+                    android:id="@+id/lst_student"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/comm_10dp"
+                android:background="@android:color/white"
+                android:orientation="vertical"
+                android:padding="@dimen/comm_10dp">
+
+                <TextView
+                    style="@style/prepare_small_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="上级指示和大、中队讲评：" />
+
+
+                <EditText
+                    android:id="@+id/tv_super_comment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/comm_10dp"
+                    android:background="@color/default_bg"
+                    android:gravity="top"
+                    android:hint="请输入讲评"
+                    android:imeOptions="actionNext"
+                    android:maxLength="200"
+                    android:padding="@dimen/comm_10dp"
+                    android:textColor="#333333"
+                    android:textColorHint="#979797"
+                    android:textSize="14sp" />
+
+                <TextView
+                    style="@style/prepare_small_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/comm_20dp"
+                    android:text="小组讲评：" />
+
+                <EditText
+                    android:id="@+id/tv_team_comment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/comm_10dp"
+                    android:background="@color/default_bg"
+                    android:gravity="top"
+                    android:hint="请输入讲评"
+                    android:imeOptions="actionNext"
+                    android:maxLength="200"
+                    android:padding="@dimen/comm_10dp"
+                    android:textColor="#333333"
+                    android:textColorHint="#979797"
+                    android:textSize="14sp" />
+
+
+                <TextView
+                    style="@style/prepare_small_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/comm_20dp"
+                    android:text="连长签字：" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/comm_10dp"
+                    android:background="@color/default_bg"
+                    android:padding="@dimen/comm_3dp">
+
+                    <ImageView
+                        android:id="@+id/tv_qianzi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/white"
+                        android:src="@mipmap/zhunbei_icon_qianzi" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/comm_10dp"
+                    android:background="@android:color/white"
+                    android:orientation="vertical"
+                    android:padding="@dimen/comm_10dp">
+
+                    <TextView
+                        style="@style/prepare_small_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="上级指示和大队讲评：" />
+
+                    <TextView
+                        android:id="@+id/tv_create_teach_activity"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginTop="@dimen/comm_10dp"
+                        android:background="@drawable/button_white_bg_blue_border"
+                        android:padding="@dimen/comm_10dp"
+                        android:text="选择日计划"
+                        android:textColor="@color/blue_comm"
+                        android:textSize="@dimen/comm_13dp" />
+
+                    <EditText
+                        android:id="@+id/tv_super_comment_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/comm_10dp"
+                        android:background="@color/default_bg"
+                        android:gravity="top"
+                        android:hint="请输入讲评"
+                        android:imeOptions="actionNext"
+                        android:maxLength="200"
+                        android:padding="@dimen/comm_10dp"
+                        android:textColor="#333333"
+                        android:textColorHint="#979797"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        style="@style/prepare_small_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/comm_20dp"
+                        android:text="教学活动计划：" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:orientation="vertical"
+                            android:padding="@dimen/comm_3dp">
+
+                            <TextView
+                                android:id="@+id/tv_jihao"
+                                style="@style/train_small_title"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:padding="@dimen/comm_5dp"
+                                android:text="-" />
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="0.2dp"
+                                android:layout_gravity="center_horizontal"
+                                android:background="#dcdcdc" />
+
+                            <TextView
+                                android:id="@+id/tv_jizhang"
+                                style="@style/train_small_title"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:padding="@dimen/comm_5dp"
+                                android:text="-" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/llt_try_fly_content"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:orientation="vertical"
+                            android:padding="@dimen/comm_3dp">
+
+                            <TextView
+                                android:id="@+id/tv_zhengjia"
+                                style="@style/train_small_title"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:padding="@dimen/comm_5dp"
+                                android:text="-" />
+
+                            <include layout="@layout/view_tu" />
+
+                            <TextView
+                                android:id="@+id/tv_fujia"
+                                style="@style/train_small_title"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:padding="@dimen/comm_5dp"
+                                android:text="-" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/llt_child_count"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="6"
+                            android:orientation="vertical" />
+                    </LinearLayout>
+
+                    <TextView
+                        style="@style/prepare_small_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/comm_20dp"
+                        android:text="飞行实施及讲评：" />
+
+
+                    <EditText
+                        android:id="@+id/tv_team_comment_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/comm_10dp"
+                        android:background="@color/default_bg"
+                        android:gravity="top"
+                        android:hint="请输入讲评"
+                        android:imeOptions="actionNext"
+                        android:maxLength="200"
+                        android:padding="@dimen/comm_10dp"
+                        android:textColor="#333333"
+                        android:textColorHint="#979797"
+                        android:textSize="14sp" />
+
+
+                    <TextView
+                        style="@style/prepare_small_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/comm_20dp"
+                        android:text="营长签字：" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/comm_10dp"
+                        android:background="@color/default_bg"
+                        android:padding="@dimen/comm_3dp">
+
+                        <ImageView
+                            android:id="@+id/tv_qianzi2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@android:color/white"
+                            android:src="@mipmap/zhunbei_icon_qianzi" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

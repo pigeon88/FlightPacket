@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:gravity="center_vertical"
+    android:layout_height="match_parent"
+    android:background="@color/default_bg"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/llt_map_job"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@mipmap/linghang_icon_ditu"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/courseware_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/comm_50dp"
+            android:text="地图作业" />
+
+        <!--<TextView
+            style="@style/courseware_sub_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/comm_50dp"
+            android:layout_marginTop="@dimen/comm_5dp"
+            android:text="MAP JOB" />-->
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llt_pilot_program"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/comm_40dp"
+        android:background="@mipmap/linghang_icon_jihua"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/courseware_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/comm_50dp"
+            android:text="领航计划" />
+
+        <!--<TextView
+            style="@style/courseware_sub_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/comm_50dp"
+            android:layout_marginTop="@dimen/comm_5dp"
+            android:text="PILOT PROGRAM" />-->
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llt_record_table"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/comm_40dp"
+        android:background="@mipmap/linghang_icon_jilu"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/courseware_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/comm_50dp"
+            android:text="领航记录表" />
+
+      <!--  <TextView
+            style="@style/courseware_sub_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/comm_50dp"
+            android:layout_marginTop="@dimen/comm_5dp"
+            android:text="PILOT RECORD TABLE" />-->
+
+    </LinearLayout>
+
+</LinearLayout>

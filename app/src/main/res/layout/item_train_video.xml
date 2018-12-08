@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llt_1"
+    android:layout_width="match_parent"
+    android:layout_height="140dp"
+    android:layout_weight="1"
+    android:background="@android:color/white"
+    android:clickable="false"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:src="@mipmap/video_img" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        style="@style/prepare_small_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:padding="@dimen/comm_10dp"
+        android:text="流体属性与流体静力学" />
+</LinearLayout>

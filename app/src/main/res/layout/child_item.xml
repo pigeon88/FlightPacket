@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.2dp"
+            android:background="#dcdcdc" />
+
+        <RelativeLayout
+            android:id="@+id/rlt_juli"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_title11"
+                style="@style/pilot_des_title"
+                android:layout_width="@dimen/comm_100dp"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:padding="@dimen/comm_13dp"
+                android:text="练习号 :" />
+
+            <EditText
+                android:id="@+id/edit_lianxihao"
+                style="@style/pilot_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/tv_title11"
+                android:hint="输入练习号"
+                android:imeOptions="actionNext"
+                android:inputType="number" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_title2"
+                style="@style/pilot_des_title"
+                android:layout_width="@dimen/comm_100dp"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:padding="@dimen/comm_13dp"
+                android:text="次数 :" />
+
+
+            <EditText
+                android:id="@+id/edit_cishu"
+                style="@style/pilot_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/tv_title2"
+                android:hint="输入次数"
+                android:imeOptions="actionNext"
+                android:inputType="number" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/title_3"
+                style="@style/pilot_des_title"
+                android:layout_width="@dimen/comm_100dp"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/comm_13dp"
+                android:text="正驾 :" />
+
+
+            <EditText
+                android:id="@+id/edit_zhengjia"
+                style="@style/pilot_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/title_3"
+                android:hint="输入正驾编号（学员）"
+                android:imeOptions="actionNext"
+                android:inputType="number" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/title4"
+                style="@style/pilot_des_title"
+                android:layout_width="@dimen/comm_100dp"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/comm_13dp"
+                android:text="副驾 :" />
+
+
+            <EditText
+                android:id="@+id/edit_fujia"
+                style="@style/pilot_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/title4"
+                android:hint="输入副驾编号"
+                android:imeOptions="actionNext"
+                android:inputType="number" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_title5"
+                style="@style/pilot_des_title"
+                android:layout_width="@dimen/comm_100dp"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/comm_13dp"
+                android:text="高度 :" />
+
+            <EditText
+                android:id="@+id/edit_gaodu"
+                style="@style/pilot_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/tv_title5"
+                android:hint="输入高度"
+                android:imeOptions="actionNext"
+                android:inputType="number" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_title6"
+                style="@style/pilot_des_title"
+                android:layout_width="@dimen/comm_100dp"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/comm_13dp"
+                android:text="航线号 :" />
+
+
+            <EditText
+                android:id="@+id/edit_hangxianhao"
+                style="@style/pilot_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/tv_title6"
+                android:hint="输入航线号"
+                android:imeOptions="actionNext"
+                android:inputType="number" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_title_jiayou"
+                style="@style/pilot_des_title"
+                android:layout_width="@dimen/comm_100dp"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:padding="@dimen/comm_13dp"
+                android:text="加油 :" />
+
+            <RadioGroup
+                android:id="@+id/rg_jiayou"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/comm_5dp"
+                android:layout_toRightOf="@id/tv_title10"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rb_jiayou1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="是" />
+
+                <RadioButton
+                    android:id="@+id/rb_jiayou2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/comm_10dp"
+                    android:checked="true"
+                    android:text="否" />
+            </RadioGroup>
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_margin="@dimen/comm_3dp"
+        android:src="@mipmap/ic_close" />
+</RelativeLayout>

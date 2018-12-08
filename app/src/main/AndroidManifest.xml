@@ -1,0 +1,157 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.hsy.flightpacket">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="com.huawei.android.launcher.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <application
+        android:name=".application.FlightApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        <activity
+            android:name=".activity.MainActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".activity.FlightCheckActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.CheckOptionActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.WeatherActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.CourseChooseActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.SkillActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ActionActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.CoursesListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.CourseDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.CodingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.AreaChooseActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.StudentListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.FlightPrepareActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.PilotReadyActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.PilotRecordInputActivity"
+            android:windowSoftInputMode="adjustPan"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.PilotRecordTableActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.VideoPlayActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".activity.SearchActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.PilotToolsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ChooseCheckPlanActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.CheckPlanActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.StuTrainProActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.UtilsActivity.PhotoViewActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".activity.TrainPlanActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.StudentInfoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.PlanRecordActivity"
+            android:windowSoftInputMode="adjustPan"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.CreatePlanActivity"
+            android:windowSoftInputMode="adjustPan"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.TrainVideoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.TacticsTrainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.FlightPrepareDateListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.PilotBeanCreateActivity"
+            android:windowSoftInputMode="adjustPan"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.PilotListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.PilotBeanDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.TeachActivityPlanActivity"
+            android:windowSoftInputMode="adjustPan"
+            android:screenOrientation="portrait" />
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.hsy.flightpacket.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <activity android:name=".activity.report.PilotRecordsActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".activity.report.StudentTrainingProgressActivity"
+            android:screenOrientation="portrait"/>
+    </application>
+
+</manifest>

@@ -1,0 +1,577 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/default_bg"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/default_bg"
+        android:orientation="vertical"
+        android:padding="@dimen/comm_10dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/item_click_bg"
+            android:clickable="true"
+            android:orientation="vertical"
+            android:padding="@dimen/comm_12dp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/comm_10dp">
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/ic_time" />
+
+                <TextView
+                    style="@style/weather_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/comm_10dp"
+                    android:text="13日" />
+
+                <TextView
+                    style="@style/weather_title_blue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/comm_10dp"
+                    android:text="06:00(UTC)" />
+
+                <TextView
+                    style="@style/weather_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/comm_10dp"
+                    android:text="至" />
+
+                <TextView
+                    style="@style/weather_title_blue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/comm_10dp"
+                    android:text="12:00（UTC）" />
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.2dp"
+                android:layout_marginTop="@dimen/comm_10dp"
+                android:background="#dcdcdc" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/comm_20dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/comm_5dp"
+                    android:src="@drawable/zhunbei_yuan_lv" />
+
+                <TextView
+                    style="@style/weather_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/comm_10dp"
+                    android:lineSpacingExtra="@dimen/comm_5dp"
+                    android:text="地面风向310°，风速7 m/s，能见度8 000 m，中阵雨，有1/8～2/8量的云，云底高度150 m，1/8～2/8量的积雨云，云底高度为300 m，3/8～4/8量的云，云底高度为540 m，5/8～7/8量的云，云底高度750 m。" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/comm_20dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/comm_5dp"
+                    android:src="@drawable/zhunbei_yuan_lv" />
+
+                <TextView
+                    style="@style/weather_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/comm_10dp"
+                    android:lineSpacingExtra="@dimen/comm_5dp"
+                    android:text="预计在10:00（UTC）至12:00（UTC）之间有短暂变化，能见度变为4 000 m，大阵雨。" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/comm_10dp"
+            android:background="@drawable/item_click_bg"
+            android:clickable="true"
+            android:orientation="vertical"
+            android:padding="@dimen/comm_12dp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/comm_10dp">
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/ic_time" />
+
+                <TextView
+                    style="@style/weather_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/comm_10dp"
+                    android:text="13日" />
+
+                <TextView
+                    style="@style/weather_title_blue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/comm_10dp"
+                    android:text="13日12:00（UTC）" />
+
+                <TextView
+                    style="@style/weather_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/comm_10dp"
+                    android:text="至" />
+
+                <TextView
+                    style="@style/weather_title_blue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/comm_10dp"
+                    android:text="18:00（UTC）" />
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.2dp"
+                android:layout_marginTop="@dimen/comm_10dp"
+                android:background="#dcdcdc" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/comm_20dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/comm_5dp"
+                    android:src="@drawable/zhunbei_yuan_lv" />
+
+                <TextView
+                    style="@style/weather_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/comm_10dp"
+                    android:lineSpacingExtra="@dimen/comm_5dp"
+                    android:text="地面风向3600°，风速12 m/s，能见度4500 m，中阵雨，有1/8～2/8量的云，云底高度150 m，1/8～2/8量的积雨云，云底高度为300 m，3/8～4/8量的云，云底高度为540 m，5/8～7/8量的云，云底高度750 m。" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/comm_20dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/comm_5dp"
+                    android:src="@drawable/zhunbei_yuan_lv" />
+
+                <TextView
+                    style="@style/weather_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/comm_10dp"
+                    android:lineSpacingExtra="@dimen/comm_5dp"
+                    android:text="在13:00（UTC）至15:00（UTC）之间，有30%概率出现中等强度的雷雨，3/8～4/8量的云，云底高度150 m，5/8～7/8量的积雨云，云底高度300 m。" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/comm_10dp"
+            android:background="@drawable/item_click_bg"
+            android:clickable="true"
+            android:orientation="vertical"
+            android:padding="@dimen/comm_12dp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/comm_10dp">
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/ic_time" />
+
+                <TextView
+                    style="@style/weather_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/comm_10dp"
+                    android:text="13日" />
+
+                <TextView
+                    style="@style/weather_title_blue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/comm_10dp"
+                    android:text="18:00（UTC" />
+
+                <TextView
+                    style="@style/weather_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/comm_10dp"
+                    android:text="至" />
+
+                <TextView
+                    style="@style/weather_title_blue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/comm_10dp"
+                    android:text="24:00（UTC）" />
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.2dp"
+                android:layout_marginTop="@dimen/comm_10dp"
+                android:background="#dcdcdc" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/comm_20dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/comm_5dp"
+                    android:src="@drawable/zhunbei_yuan_lv" />
+
+                <TextView
+                    style="@style/weather_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/comm_10dp"
+                    android:lineSpacingExtra="@dimen/comm_5dp"
+                    android:text="地面风向540°，风速21m/s，能见度3公里，阵雨，有1/8～2/8量的云，云底高度150 m，1/8～2/8量的积雨云，云底高度为300 m，3/8～4/8量的云，云底高度为540 m，5/8～7/8量的云，云底高度750 m。" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/comm_10dp"
+            android:background="@drawable/item_click_bg"
+            android:clickable="true"
+            android:orientation="vertical"
+            android:padding="@dimen/comm_12dp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/comm_10dp">
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/ic_time" />
+
+                <TextView
+                    style="@style/weather_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/comm_10dp"
+                    android:text="14日" />
+
+                <TextView
+                    style="@style/weather_title_blue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/comm_10dp"
+                    android:text="13日12:00（UTC）" />
+
+                <TextView
+                    style="@style/weather_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/comm_10dp"
+                    android:text="至" />
+
+                <TextView
+                    style="@style/weather_title_blue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/comm_10dp"
+                    android:text="18:00（UTC）" />
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.2dp"
+                android:layout_marginTop="@dimen/comm_10dp"
+                android:background="#dcdcdc" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/comm_20dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/comm_5dp"
+                    android:src="@drawable/zhunbei_yuan_lv" />
+
+                <TextView
+                    style="@style/weather_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/comm_10dp"
+                    android:lineSpacingExtra="@dimen/comm_5dp"
+                    android:text="地面风向3600°，风速12 m/s，能见度4500 m，中阵雨，有1/8～2/8量的云，云底高度150 m，1/8～2/8量的积雨云，云底高度为300 m，3/8～4/8量的云，云底高度为540 m，5/8～7/8量的云，云底高度750 m。" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/comm_20dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/comm_5dp"
+                    android:src="@drawable/zhunbei_yuan_lv" />
+
+                <TextView
+                    style="@style/weather_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/comm_10dp"
+                    android:lineSpacingExtra="@dimen/comm_5dp"
+                    android:text="在13:00（UTC）至15:00（UTC）之间，有30%概率出现中等强度的雷雨，3/8～4/8量的云，云底高度150 m，5/8～7/8量的积雨云，云底高度300 m。" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/comm_10dp"
+            android:background="@drawable/item_click_bg"
+            android:clickable="true"
+            android:orientation="vertical"
+            android:padding="@dimen/comm_12dp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/comm_10dp">
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/ic_time" />
+
+                <TextView
+                    style="@style/weather_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/comm_10dp"
+                    android:text="14日" />
+
+                <TextView
+                    style="@style/weather_title_blue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/comm_10dp"
+                    android:text="18:00（UTC" />
+
+                <TextView
+                    style="@style/weather_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/comm_10dp"
+                    android:text="至" />
+
+                <TextView
+                    style="@style/weather_title_blue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/comm_10dp"
+                    android:text="24:00（UTC）" />
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.2dp"
+                android:layout_marginTop="@dimen/comm_10dp"
+                android:background="#dcdcdc" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/comm_20dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/comm_5dp"
+                    android:src="@drawable/zhunbei_yuan_lv" />
+
+                <TextView
+                    style="@style/weather_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/comm_10dp"
+                    android:lineSpacingExtra="@dimen/comm_5dp"
+                    android:text="地面风向540°，风速21m/s，能见度3公里，阵雨，有1/8～2/8量的云，云底高度150 m，1/8～2/8量的积雨云，云底高度为300 m，3/8～4/8量的云，云底高度为540 m，5/8～7/8量的云，云底高度750 m。" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/item_click_bg"
+            android:clickable="true"
+            android:orientation="vertical"
+            android:padding="@dimen/comm_12dp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/comm_10dp">
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/ic_time" />
+
+                <TextView
+                    style="@style/weather_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/comm_10dp"
+                    android:text="14日" />
+
+                <TextView
+                    style="@style/weather_title_blue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/comm_10dp"
+                    android:text="06:00(UTC)" />
+
+                <TextView
+                    style="@style/weather_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/comm_10dp"
+                    android:text="至" />
+
+                <TextView
+                    style="@style/weather_title_blue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/comm_10dp"
+                    android:text="12:00（UTC）" />
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.2dp"
+                android:layout_marginTop="@dimen/comm_10dp"
+                android:background="#dcdcdc" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/comm_20dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/comm_5dp"
+                    android:src="@drawable/zhunbei_yuan_lv" />
+
+                <TextView
+                    style="@style/weather_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/comm_10dp"
+                    android:lineSpacingExtra="@dimen/comm_5dp"
+                    android:text="地面风向310°，风速7 m/s，能见度8 000 m，中阵雨，有1/8～2/8量的云，云底高度150 m，1/8～2/8量的积雨云，云底高度为300 m，3/8～4/8量的云，云底高度为540 m，5/8～7/8量的云，云底高度750 m。" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/comm_20dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/comm_5dp"
+                    android:src="@drawable/zhunbei_yuan_lv" />
+
+                <TextView
+                    style="@style/weather_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/comm_10dp"
+                    android:lineSpacingExtra="@dimen/comm_5dp"
+                    android:text="预计在10:00（UTC）至12:00（UTC）之间有短暂变化，能见度变为4 000 m，大阵雨。" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

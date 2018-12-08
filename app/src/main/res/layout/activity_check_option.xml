@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/default_bg"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/comm_10dp"
+        android:background="@android:color/white"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/comm_20dp"
+        android:paddingLeft="@dimen/comm_10dp"
+        android:paddingRight="@dimen/comm_10dp"
+        android:paddingTop="@dimen/comm_15dp">
+
+        <TextView
+            style="@style/item_grey_des"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="请检查" />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.2dp"
+            android:layout_marginTop="@dimen/comm_10dp"
+            android:background="#dcdcdc" />
+
+        <TextView
+            android:id="@+id/des"
+            style="@style/black_title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/comm_10dp"
+            android:text="燃油开关处于打开状态" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/comm_10dp"
+            android:src="@drawable/check_demo_ic1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/comm_10dp"
+        android:layout_marginRight="@dimen/comm_10dp"
+        android:background="@android:color/white"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/comm_20dp"
+        android:paddingLeft="@dimen/comm_10dp"
+        android:paddingRight="@dimen/comm_10dp"
+        android:paddingTop="@dimen/comm_15dp">
+
+        <TextView
+            style="@style/item_grey_des"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="请检查" />
+
+        <RelativeLayout
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="@dimen/comm_10dp">
+
+            <ImageView
+                android:id="@+id/iv_photo"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/zhunbei_paizhao" />
+
+            <ImageView
+                android:id="@+id/iv_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/zhunbei_quxiao"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/llt_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.2dp"
+                android:layout_marginTop="@dimen/comm_20dp"
+                android:background="#dcdcdc" />
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/comm_20dp"
+                android:weightSum="2">
+
+                <TextView
+                    android:id="@+id/tv_rephoto"
+                    style="@style/button_blue_text"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_white_bg_blue_border"
+                    android:gravity="center"
+                    android:padding="@dimen/comm_10dp"
+                    android:text="重新拍照" />
+
+                <TextView
+                    android:id="@+id/tv_done"
+                    style="@style/button_white_text"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/comm_20dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_button_blue_with_radius2"
+                    android:gravity="center"
+                    android:padding="@dimen/comm_10dp"
+                    android:text="完成检查" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+</LinearLayout>

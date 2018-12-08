@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_transparent"
+    android:minHeight="260dp"
+    android:id="@+id/llt_view_error_page_content"
+    android:orientation="vertical">
+
+    <!-- 类型一：文字加图片 -->
+    <RelativeLayout
+        android:id="@+id/v_error_type_1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_transparent"
+        android:minHeight="260dp"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/btn_error_type_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="-10dp"
+            android:gravity="center"
+            android:minWidth="80dp"
+            android:paddingBottom="6dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="6dp"
+            android:text="暂无消息"
+            android:textColor="#468dd8"
+            android:textSize="13sp" />
+
+        <ImageView
+            android:id="@+id/iv_error_type_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/btn_error_type_1"
+            android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+
+    <!-- 类型二：文字 + 一段话 + 按钮，按钮可控制有或没有 -->
+    <RelativeLayout
+        android:id="@+id/v_error_type_2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_transparent"
+        android:minHeight="260dp"
+        android:visibility="visible">
+
+        <TextView
+            android:id="@+id/tv_error_type_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="网络异常，刷新重试"
+            android:maxLines="4"
+            android:textColor="#468dd8"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/btn_error_type_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_error_type_2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:minWidth="70dp"
+            android:paddingBottom="6dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="6dp"
+            android:background="@drawable/bg_button_blue_with_radius2"
+            android:text="刷新"
+            android:textColor="#FFFFFF"
+            android:textSize="13sp" />
+
+        <ImageView
+            android:id="@+id/iv_error_type_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/tv_error_type_2"
+            android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+</LinearLayout>

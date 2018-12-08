@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.hsy.flightpacket.views.HVScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F1F5F8"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/v9_shape_box_selector"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@drawable/v9_shape_box_selector"
+            android:divider="@drawable/v9_divider_vertical_blue_selector"
+            android:orientation="horizontal"
+            android:showDividers="middle"
+            android:visibility="visible">
+
+            <include layout="@layout/report_student_training_progress_head_ctrl" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="@drawable/v9_divider_horizontal_blue_selector"
+                android:orientation="vertical"
+                android:showDividers="middle">
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="2"
+                    android:gravity="center_vertical"
+                    android:text="低空飞行" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="2"
+                    android:gravity="center_vertical"
+                    android:text="动力系统控制" />
+
+                <LinearLayout
+                    android:id="@+id/tv_header_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="3"
+                    android:divider="@drawable/v9_divider_vertical_blue_selector"
+                    android:orientation="horizontal"
+                    android:showDividers="middle">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:gravity="center"
+                        android:text="0000-00-00" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:gravity="center"
+                        android:text="0000-00-00" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:gravity="center"
+                        android:text="0000-00-00" />
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <!--<include layout="@layout/report_student_training_progress_item" />-->
+
+        <com.hsy.flightpacket.views.NoScrollListView
+            android:id="@+id/lst_student"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@color/divider_horizontal_gray"
+            android:dividerHeight="@dimen/divider_height"
+            android:visibility="visible" />
+    </LinearLayout>
+</com.hsy.flightpacket.views.HVScrollView>

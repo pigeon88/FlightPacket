@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/default_bg"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:id="@+id/sc_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="@dimen/comm_10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/white"
+                android:orientation="vertical"
+                android:padding="@dimen/comm_10dp">
+
+                <TextView
+                    android:id="@+id/tv_1"
+                    style="@style/courseware_detail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:lineSpacingExtra="@dimen/comm_5dp"
+                    android:text="        静止液体内的压力（压强）分布，压力对器壁的作用，分布在平面或曲面上的压力的合力及其作用点，物体受到的浮力和浮力的作用点，浮体的稳定性以及静止气体的压力分布、密度分布和温度分布等。
+        从广义上说，流体静力学还包括流体处于相对静止的情形，例如盛有液体的容器绕一垂直轴线做匀速旋转时的自由表面为旋转抛物面就是一例。相对静止或匀速运动的流体, 牛顿运动定律表明该物体所受合力为零 – 向上的力和向下的力相等. 这种平衡被称为静水压平衡
+我们可以将该气体分解为若干微长方体体积元素。当只考虑其中一个元素时, " />
+
+
+                <ImageView
+                    android:id="@+id/iv_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/comm_10dp"
+                    android:src="@mipmap/detail_1" />
+
+                <TextView
+                    android:id="@+id/tv_2"
+                    style="@style/courseware_detail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/comm_10dp"
+                    android:lineSpacingExtra="@dimen/comm_5dp"
+                    android:text="Fbottom=-Fbottom·A
+在这个等式中, 减号来自于方向 – 这个力支持了体积元素, 而不是将它们拉下去 (我们认定正方向的力作用向下)。" />
+
+                <ImageView
+                    android:id="@+id/iv_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/comm_10dp"
+                    android:src="@mipmap/detail_2" />
+
+
+                <ImageView
+                    android:id="@+id/iv_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/comm_10dp"
+                    android:src="@mipmap/detail_3" />
+
+                <TextView
+                    android:id="@+id/tv_3"
+                    style="@style/courseware_detail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:lineSpacingExtra="@dimen/comm_5dp"
+                    android:text="        静止液体内的压力（压强）分布，压力对器壁的作用，分布在平面或曲面上的压力的合力及其作用点，物体受到的浮力和浮力的作用点，浮体的稳定性以及静止气体的压力分布、密度分布和温度分布等。
+        从广义上说，流体静力学还包括流体处于相对静止的情形，例如盛有液体的容器绕一垂直轴线做匀速旋转时的自由表面为旋转抛物面就是一例。相对静止或匀速运动的流体, 牛顿运动定律表明该物体所受合力为零 – 向上的力和向下的力相等. 这种平衡被称为静水压平衡
+我们可以将该气体分解为若干微长方体体积元素。当只考虑其中一个元素时, " />
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <ListView
+        android:id="@+id/lst_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+</LinearLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/default_bg"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:id="@+id/llt_bottom"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/white"
+        android:padding="@dimen/comm_10dp">
+
+        <CheckBox
+            android:id="@+id/cb_choose_all"
+            style="@style/prepare_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:button="@null"
+            android:drawablePadding="@dimen/comm_10dp"
+            android:drawableStart="@drawable/choose_delete_yuan"
+            android:text="全选" />
+
+        <TextView
+            android:id="@+id/tv_create_plan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/bg_button_blue_with_radius0"
+            android:gravity="center"
+            android:paddingBottom="@dimen/comm_5dp"
+            android:paddingLeft="@dimen/comm_20dp"
+            android:paddingRight="@dimen/comm_20dp"
+            android:paddingTop="@dimen/comm_5dp"
+            android:text="删除"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/comm_16dp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+
+    <ListView
+        android:id="@+id/lst_check"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/llt_bottom"
+        android:layout_margin="@dimen/comm_10dp"
+        android:background="@android:color/white"
+        android:padding="@dimen/comm_10dp" />
+
+
+</RelativeLayout>

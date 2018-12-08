@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_one"
+        style="@style/prepare_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/item_click_bg"
+        android:gravity="center"
+        android:padding="@dimen/comm_10dp"
+        android:text="九期一班" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.2dp"
+        android:background="#dcdcdc" />
+
+    <TextView
+        android:id="@+id/tv_two"
+        style="@style/prepare_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/item_click_bg"
+        android:gravity="center"
+        android:padding="@dimen/comm_10dp"
+        android:text="九期二班" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.2dp"
+        android:background="#dcdcdc" />
+
+    <TextView
+        android:id="@+id/tv_three"
+        style="@style/prepare_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/item_click_bg"
+        android:gravity="center"
+        android:padding="@dimen/comm_10dp"
+        android:text="九期三班" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.2dp"
+        android:background="#dcdcdc" />
+</LinearLayout>

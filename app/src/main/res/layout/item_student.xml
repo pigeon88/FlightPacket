@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/comm_13dp">
+
+        <TextView
+            android:id="@+id/tv_name"
+            style="@style/train_small_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="王一山（LH060301）" />
+
+        <TextView
+            android:id="@+id/tv_status"
+            style="@style/train_small_grey"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="已完成" />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/default_bg"
+    android:orientation="vertical"
+    android:padding="@dimen/comm_10dp">
+
+    <ListView
+        android:id="@+id/lst_pilot"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white" />
+
+    <TextView
+        android:id="@+id/tv_create_plan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/comm_10dp"
+        android:background="@mipmap/ic_create"
+        android:gravity="center"
+        android:padding="@dimen/comm_10dp"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/comm_16dp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

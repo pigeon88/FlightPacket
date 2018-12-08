@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/default_bg"
+    android:orientation="vertical"
+    android:padding="@dimen/comm_10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:orientation="vertical"
+        android:padding="@dimen/comm_20dp">
+
+        <TextView
+            style="@style/prepare_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="训练进度汇总" />
+
+
+        <TextView
+            android:id="@+id/tv_check2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/comm_10dp"
+            android:background="@drawable/button_white_bg_blue_border"
+            android:paddingBottom="@dimen/comm_5dp"
+            android:paddingLeft="@dimen/comm_20dp"
+            android:paddingRight="@dimen/comm_20dp"
+            android:paddingTop="@dimen/comm_5dp"
+            android:text="查看学员训练进度"
+            android:textColor="#01c6f0" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/comm_10dp"
+        android:background="@android:color/white"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/prepare_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/comm_10dp"
+            android:text="学员" />
+
+        <TextView
+            android:id="@+id/tv_item1"
+            style="@style/prepare_small_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/item_click_bg"
+            android:drawableEnd="@mipmap/kejian_you"
+            android:padding="@dimen/comm_15dp"
+            android:text="王一山（LH060301）" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.2dp"
+            android:background="#dcdcdc" />
+
+        <TextView
+            android:id="@+id/tv_item2"
+            style="@style/prepare_small_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/item_click_bg"
+            android:drawableEnd="@mipmap/kejian_you"
+            android:padding="@dimen/comm_15dp"
+            android:text="王二山（LH060301）" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.2dp"
+            android:background="#dcdcdc" />
+
+        <TextView
+            android:id="@+id/tv_item3"
+            style="@style/prepare_small_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/item_click_bg"
+            android:drawableEnd="@mipmap/kejian_you"
+            android:padding="@dimen/comm_15dp"
+            android:text="王三山（LH060301）" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.2dp"
+            android:background="#dcdcdc" />
+
+        <TextView
+            android:id="@+id/tv_item4"
+            style="@style/prepare_small_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/item_click_bg"
+            android:drawableEnd="@mipmap/kejian_you"
+            android:padding="@dimen/comm_15dp"
+            android:text="王四山（LH060301）" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.2dp"
+            android:background="#dcdcdc" />
+
+        <TextView
+            android:id="@+id/tv_item5"
+            style="@style/prepare_small_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/item_click_bg"
+            android:drawableEnd="@mipmap/kejian_you"
+            android:padding="@dimen/comm_15dp"
+            android:text="王五山（LH060301）" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.2dp"
+            android:background="#dcdcdc" />
+
+        <TextView
+            android:id="@+id/tv_item6"
+            style="@style/prepare_small_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/item_click_bg"
+            android:drawableEnd="@mipmap/kejian_you"
+            android:padding="@dimen/comm_15dp"
+            android:text="王六山（LH060301）" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.2dp"
+            android:background="#dcdcdc" />
+    </LinearLayout>
+</LinearLayout>

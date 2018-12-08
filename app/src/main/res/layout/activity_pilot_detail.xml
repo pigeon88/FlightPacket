@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/default_bg"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/llt_bottom"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="@dimen/comm_10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/pilot_bean_detail_input_time"
+                    style="@style/pilot_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/comm_10dp"
+                    android:text="2018 10-11 1277领航线" />
+
+
+                <TextView
+                    android:id="@+id/tv_title"
+                    style="@style/pilot_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/comm_15dp"
+                    android:paddingLeft="@dimen/comm_10dp"
+                    android:paddingRight="@dimen/comm_10dp"
+                    android:paddingTop="@dimen/comm_15dp"
+                    android:text="基础资料" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.2dp"
+                    android:background="#dcdcdc" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/title_3"
+                        style="@style/pilot_des_title"
+                        android:layout_width="@dimen/comm_100dp"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/comm_13dp"
+                        android:text="机型/号 :" />
+
+                    <TextView
+                        android:id="@+id/pilot_bean_detail_input_model"
+                        style="@style/pilot_input"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/title_3"/>
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.2dp"
+                    android:background="#dcdcdc" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/title4"
+                        style="@style/pilot_des_title"
+                        android:layout_width="@dimen/comm_100dp"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/comm_13dp"
+                        android:text="飞行员 :" />
+
+
+                    <TextView
+                        android:id="@+id/pilot_bean_detail_input_flyer_num"
+                        style="@style/pilot_input"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/title4" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.2dp"
+                    android:background="#dcdcdc" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tv_title5"
+                        style="@style/pilot_des_title"
+                        android:layout_width="@dimen/comm_100dp"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/comm_13dp"
+                        android:text="领航员 :" />
+
+                    <TextView
+                        android:id="@+id/pilot_bean_detail_input_piloter_num"
+                        style="@style/pilot_input"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/tv_title5" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.2dp"
+                    android:background="#dcdcdc" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tv_title7"
+                        style="@style/pilot_des_title"
+                        android:layout_width="@dimen/comm_100dp"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/comm_13dp"
+                        android:text="出航图 :" />
+
+                    <ImageView
+                        android:id="@+id/tv_out"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_below="@id/tv_title7"
+                        android:layout_marginLeft="@dimen/comm_10dp"
+                        android:background="#cccccc"
+                        android:scaleType="centerCrop" />
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.2dp"
+                    android:layout_marginTop="@dimen/comm_10dp"
+                    android:background="#dcdcdc" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tv_title6"
+                        style="@style/pilot_des_title"
+                        android:layout_width="@dimen/comm_100dp"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/comm_13dp"
+                        android:text="归航图 :" />
+
+                    <ImageView
+                        android:id="@+id/tv_detail_back"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_below="@id/tv_title6"
+                        android:layout_marginLeft="@dimen/comm_10dp"
+                        android:background="#cccccc"
+                        android:scaleType="centerCrop" />
+                </RelativeLayout>
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.2dp"
+                    android:layout_marginTop="@dimen/comm_10dp"
+                    android:background="#dcdcdc" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/pilot_des_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/comm_13dp"
+                        android:text="通讯导航资料 :" />
+
+                    <TextView
+                        android:id="@+id/tv_navi_detail_content"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:padding="@dimen/comm_13dp"
+                        android:textColor="#333333"
+                        android:textColorHint="#979797"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.2dp"
+                    android:background="#dcdcdc" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/pilot_des_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/comm_13dp"
+                        android:text="左表信息 :" />
+
+                    <com.hsy.flightpacket.views.NoScrollListView
+                        android:id="@+id/nlv_left"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.2dp"
+                    android:background="#dcdcdc" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/pilot_des_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/comm_13dp"
+                        android:text="右表信息 :" />
+
+                    <com.hsy.flightpacket.views.NoScrollListView
+                        android:id="@+id/nlv_right"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.2dp"
+                    android:background="#dcdcdc" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        style="@style/pilot_des_title"
+                        android:layout_width="@dimen/comm_100dp"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/comm_13dp"
+                        android:text="着陆时刻 :" />
+
+                    <TextView
+                        android:id="@+id/pilot_bean_detail_input_time1"
+                        style="@style/item_grey_des"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="选择日期" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        style="@style/pilot_des_title"
+                        android:layout_width="@dimen/comm_100dp"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/comm_13dp"
+                        android:text="续航时刻 :" />
+
+                    <TextView
+                        android:id="@+id/pilot_bean_detail_input_time2"
+                        style="@style/item_grey_des"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="选择日期" />
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

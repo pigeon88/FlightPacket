@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:divider="@color/blue_comm"
+    android:background="@color/default_bg"
+    android:orientation="horizontal"
+    android:weightSum="3">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@color/blue_comm"
+        android:orientation="horizontal"
+        android:background="#e5e5e5"
+        android:layout_margin="@dimen/comm_15dp"
+        android:weightSum="3">
+
+        <LinearLayout
+            android:id="@+id/llt_1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/item_click_bg"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="@dimen/comm_15dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/kejian_icon_dazhuanwan" />
+
+            <TextView
+                style="@style/courseware_skill_des"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/comm_20dp"
+                android:text="大坡度转弯" />
+
+            <TextView
+                style="@style/courseware_skill_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/comm_10dp"
+                android:text="(11)" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llt_2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="0.5dp"
+            android:background="@drawable/item_click_bg"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="@dimen/comm_15dp">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/kejian_icon_shisu" />
+
+            <TextView
+                style="@style/courseware_skill_des"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/comm_20dp"
+                android:text="失速" />
+
+            <TextView
+                style="@style/courseware_skill_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/comm_10dp"
+                android:text="(9)" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llt_3"
+            android:layout_width="0dp"
+            android:layout_marginLeft="0.5dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/item_click_bg"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="@dimen/comm_15dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/kejian_icon_mansu" />
+
+            <TextView
+                style="@style/courseware_skill_des"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/comm_20dp"
+                android:text="慢速飞行" />
+
+            <TextView
+                style="@style/courseware_skill_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/comm_10dp"
+                android:text="(12)" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:background="@color/default_bg"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/llt_video"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@mipmap/zhanshu_icon_shipin"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/courseware_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/comm_50dp"
+            android:text="视频" />
+
+    <!--    <TextView
+            style="@style/courseware_sub_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/comm_50dp"
+            android:layout_marginTop="@dimen/comm_5dp"
+            android:text="VIDEO" />-->
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llt_document"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/comm_40dp"
+        android:background="@mipmap/zhanshu_icon_wendang"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/courseware_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/comm_50dp"
+            android:text="文档" />
+
+     <!--   <TextView
+            style="@style/courseware_sub_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/comm_50dp"
+            android:layout_marginTop="@dimen/comm_5dp"
+            android:text="DOCUMENT" />
+-->
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/llt_pic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/comm_40dp"
+        android:background="@mipmap/zhanshu_icon_tupian"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/courseware_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/comm_50dp"
+            android:text="图片" />
+
+        <!--<TextView
+            style="@style/courseware_sub_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/comm_50dp"
+            android:layout_marginTop="@dimen/comm_5dp"
+            android:text="IMAGE" />-->
+
+    </LinearLayout>
+</LinearLayout>

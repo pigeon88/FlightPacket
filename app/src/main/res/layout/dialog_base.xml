@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_title"
+                style="@style/dialog_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center_horizontal"
+                android:paddingLeft="@dimen/comm_5dp"
+                android:paddingRight="@dimen/comm_5dp"
+                android:paddingTop="@dimen/comm_18dp"
+                android:text="这里是标题" />
+
+            <ImageView
+                android:id="@+id/iv_progress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="@dimen/comm_5dp"
+                android:layout_marginTop="@dimen/comm_18dp"
+                android:layout_toRightOf="@id/tv_title"
+                android:src="@drawable/ic_loading"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/tv_title_sub"
+            style="@style/dialog_title_sub"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15sp"
+            android:gravity="center"
+            android:text="这里是副标题" />
+
+        <LinearLayout
+            android:id="@+id/llt_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/comm_10dp"
+            android:orientation="vertical" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llt_sure_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="@dimen/comm_15dp"
+            android:background="@color/dialog_line" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:weightSum="2">
+
+            <TextView
+                android:id="@+id/tv_cancel"
+                style="@style/dialog_sure_cancel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="@dimen/comm_15dp"
+                android:text="取消" />
+
+            <View
+                android:id="@+id/tv_split"
+                android:layout_width="0.5dp"
+                android:layout_height="match_parent"
+                android:background="@color/dialog_line" />
+
+            <TextView
+                android:id="@+id/tv_sure"
+                style="@style/dialog_sure_cancel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="@dimen/comm_15dp"
+                android:text="确认" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

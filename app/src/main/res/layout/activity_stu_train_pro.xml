@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/default_bg"
+    android:orientation="vertical"
+    android:padding="@dimen/comm_10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:orientation="vertical"
+        android:padding="@dimen/comm_10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/prepare_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="科目：" />
+
+            <TextView
+                style="@style/prepare_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="低空飞行" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/comm_10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/prepare_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="练习：" />
+
+            <TextView
+                style="@style/prepare_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="动力系统控制" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/comm_10dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:orientation="horizontal"
+            android:padding="@dimen/comm_13dp"
+            android:weightSum="5">
+
+            <TextView
+                style="@style/prepare_small_title"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="姓名" />
+
+            <TextView
+                style="@style/prepare_small_title"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="日期" />
+
+
+            <TextView
+                style="@style/prepare_small_title"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="带飞" />
+
+            <TextView
+                style="@style/prepare_small_title"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="检查" />
+
+            <TextView
+                style="@style/prepare_small_title"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="单飞" />
+        </LinearLayout>
+
+        <com.hsy.flightpacket.views.NoScrollListView
+            android:id="@+id/lst_student"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/tv_video_1"
+        style="@style/button_blue_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/item_click_bg"
+        android:drawableRight="@mipmap/zhanshu_icon_zbofangzhong"
+        android:padding="@dimen/comm_10dp"
+        android:text="流体属性与流体静力学" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.2dp"
+        android:background="#dcdcdc" />
+</RelativeLayout>

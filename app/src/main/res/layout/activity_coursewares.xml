@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/default_bg"
+    android:gravity="center_vertical"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/llt_tech_ability"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/kejian_icon_jineng"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/courseware_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/comm_50dp"
+            android:text="技能" />
+
+     <!--   <TextView
+            style="@style/courseware_sub_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/comm_50dp"
+            android:layout_marginTop="@dimen/comm_5dp"
+            android:text="TECHNICALABILITY" />-->
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llt_pilotage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/comm_40dp"
+        android:background="@drawable/kejian_icon_linghang"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/courseware_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/comm_50dp"
+            android:text="领航" />
+
+       <!-- <TextView
+            style="@style/courseware_sub_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/comm_50dp"
+            android:layout_marginTop="@dimen/comm_5dp"
+            android:text="PILPTAGE" />-->
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llt_principle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/comm_40dp"
+        android:background="@drawable/kejian_icon_yuanli"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/courseware_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/comm_50dp"
+            android:text="原理" />
+
+     <!--   <TextView
+            style="@style/courseware_sub_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/comm_50dp"
+            android:layout_marginTop="@dimen/comm_5dp"
+            android:text="PRINCIPLE" />-->
+
+    </LinearLayout>
+
+</LinearLayout>

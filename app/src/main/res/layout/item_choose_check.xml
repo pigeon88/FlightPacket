@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rlt_6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/item_click_bg"
+        android:orientation="horizontal"
+        android:padding="@dimen/comm_15dp">
+
+        <CheckBox
+            android:id="@+id/cb_choose6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:button="@null"
+            android:drawableStart="@drawable/unupload_checked" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/comm_20dp"
+            android:layout_toRightOf="@id/cb_choose6"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/title"
+                style="@style/black_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="汽化器加温杆" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/comm_15dp">
+
+                <CheckBox
+                    android:id="@+id/cb_point_6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:button="@null"
+                    android:clickable="false"
+                    android:drawableStart="@drawable/des_checked"
+                    android:focusable="false" />
+
+                <TextView
+                    android:id="@+id/des"
+                    style="@style/item_grey_des"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/comm_10dp"
+                    android:text="按下" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

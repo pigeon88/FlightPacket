@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/default_bg"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/default_bg"
+        android:orientation="vertical"
+        android:padding="@dimen/comm_10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/rlt_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_date"
+                    style="@style/prepare_small_title"
+                    android:layout_width="@dimen/comm_100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:imeOptions="actionNext"
+                    android:padding="@dimen/comm_12dp"
+                    android:text="训练日期 :" />
+
+                <TextView
+                    android:id="@+id/tv_result_date"
+                    style="@style/prepare_small_title"
+                    android:layout_width="@dimen/comm_100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/tv_date"
+                    android:imeOptions="actionNext"
+                    android:padding="@dimen/comm_12dp"
+                    android:text="选择日期 " />
+
+                <ImageView
+                    android:id="@+id/iv_you"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/comm_10dp"
+                    android:src="@mipmap/kejian_you" />
+            </RelativeLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.2dp"
+                android:background="#dcdcdc" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    style="@style/prepare_small_title"
+                    android:layout_width="@dimen/comm_100dp"
+                    android:layout_height="wrap_content"
+                    android:imeOptions="actionNext"
+                    android:padding="@dimen/comm_12dp"
+                    android:text="班级选择 :" />
+
+                <TextView
+                    android:id="@+id/tv_class_choose"
+                    style="@style/pilot_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="点击选择班级" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.2dp"
+                android:background="#dcdcdc" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    style="@style/prepare_small_title"
+                    android:layout_width="@dimen/comm_100dp"
+                    android:layout_height="wrap_content"
+                    android:imeOptions="actionNext"
+                    android:padding="@dimen/comm_12dp"
+                    android:text="计划名称 :" />
+
+                <EditText
+                    android:id="@+id/edt_plan_name"
+                    style="@style/pilot_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="选择或输入" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.2dp"
+                android:background="#dcdcdc" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    style="@style/prepare_small_title"
+                    android:layout_width="@dimen/comm_100dp"
+                    android:layout_height="wrap_content"
+                    android:imeOptions="actionNext"
+                    android:padding="@dimen/comm_12dp"
+                    android:text="科目 :" />
+
+                <EditText
+                    android:id="@+id/edt_subject"
+                    style="@style/pilot_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="选择或输入" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.2dp"
+                android:background="#dcdcdc" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    style="@style/prepare_small_title"
+                    android:layout_width="@dimen/comm_100dp"
+                    android:layout_height="wrap_content"
+                    android:imeOptions="actionNext"
+                    android:padding="@dimen/comm_12dp"
+                    android:text="练习 :" />
+
+                <EditText
+                    android:id="@+id/edt_practice"
+                    style="@style/pilot_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="选择或输入" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/comm_10dp"
+            android:background="@android:color/white"
+            android:orientation="vertical"
+            android:padding="@dimen/comm_15dp">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    style="@style/prepare_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="训练学员" />
+
+                <TextView
+                    android:id="@+id/tv_check2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/button_white_bg_blue_border"
+                    android:paddingBottom="@dimen/comm_5dp"
+                    android:paddingLeft="@dimen/comm_20dp"
+                    android:paddingRight="@dimen/comm_20dp"
+                    android:paddingTop="@dimen/comm_5dp"
+                    android:text="全选"
+                    android:textColor="#01c6f0" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/comm_20dp"
+                android:gravity="center_horizontal"
+                android:weightSum="3">
+
+                <CheckBox
+                    android:id="@+id/cb1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/comm_5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_check_blue_border"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:paddingBottom="@dimen/comm_10dp"
+                    android:paddingLeft="@dimen/comm_20dp"
+                    android:paddingRight="@dimen/comm_20dp"
+                    android:paddingTop="@dimen/comm_10dp"
+                    android:text="王一山"
+                    android:textColor="@drawable/text_color_checked" />
+
+                <CheckBox
+                    android:id="@+id/cb2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/comm_20dp"
+                    android:layout_marginTop="@dimen/comm_5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_check_blue_border"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:paddingBottom="@dimen/comm_10dp"
+                    android:paddingLeft="@dimen/comm_20dp"
+                    android:paddingRight="@dimen/comm_20dp"
+                    android:paddingTop="@dimen/comm_10dp"
+                    android:text="王二山"
+                    android:textColor="@drawable/text_color_checked" />
+
+                <CheckBox
+                    android:id="@+id/cb3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/comm_20dp"
+                    android:layout_marginTop="@dimen/comm_5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_check_blue_border"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:paddingBottom="@dimen/comm_10dp"
+                    android:paddingLeft="@dimen/comm_20dp"
+                    android:paddingRight="@dimen/comm_20dp"
+                    android:paddingTop="@dimen/comm_10dp"
+                    android:text="王三山"
+                    android:textColor="@drawable/text_color_checked" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/comm_10dp"
+                android:gravity="center_horizontal"
+                android:weightSum="3">
+
+                <CheckBox
+                    android:id="@+id/cb4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/comm_5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_check_blue_border"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:paddingBottom="@dimen/comm_10dp"
+                    android:paddingLeft="@dimen/comm_20dp"
+                    android:paddingRight="@dimen/comm_20dp"
+                    android:paddingTop="@dimen/comm_10dp"
+                    android:text="王四山"
+                    android:textColor="@drawable/text_color_checked" />
+
+                <CheckBox
+                    android:id="@+id/cb5"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/comm_20dp"
+                    android:layout_marginTop="@dimen/comm_5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_check_blue_border"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:paddingBottom="@dimen/comm_10dp"
+                    android:paddingLeft="@dimen/comm_20dp"
+                    android:paddingRight="@dimen/comm_20dp"
+                    android:paddingTop="@dimen/comm_10dp"
+                    android:text="王五山"
+                    android:textColor="@drawable/text_color_checked" />
+
+                <CheckBox
+                    android:id="@+id/cb6"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/comm_20dp"
+                    android:layout_marginTop="@dimen/comm_5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_check_blue_border"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:paddingBottom="@dimen/comm_10dp"
+                    android:paddingLeft="@dimen/comm_20dp"
+                    android:paddingRight="@dimen/comm_20dp"
+                    android:paddingTop="@dimen/comm_10dp"
+                    android:text="王六山"
+                    android:textColor="@drawable/text_color_checked" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/comm_10dp"
+            android:background="@android:color/white"
+            android:orientation="vertical"
+            android:padding="@dimen/comm_15dp">
+
+            <TextView
+                android:id="@+id/tv_create_teach_activity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/bg_button_blue_with_radius0"
+                android:gravity="center"
+                android:padding="@dimen/comm_5dp"
+                android:text="创建教学活动"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/comm_13dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llt_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/white"
+        android:padding="@dimen/comm_8dp">
+
+        <TextView
+            android:id="@+id/tv_create_plan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/bg_button_blue_with_radius2"
+            android:gravity="center"
+            android:padding="@dimen/comm_10dp"
+            android:text="确定"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/comm_16dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>
